@@ -18,6 +18,8 @@
 		A74DA9C51B1454BA00DDD3BF /* mu_first_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74DA9C41B1454BA00DDD3BF /* mu_first_appTests.m */; };
 		A74DA9D11B14822F00DDD3BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74DA9D01B14822F00DDD3BF /* Images.xcassets */; };
 		A757193D1B74CF1B0050FD54 /* asu_pid.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A757193C1B74CF1B0050FD54 /* asu_pid.entitlements */; };
+		A7CA13CE1BDFC1390012558B /* icon_3818.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CA13CD1BDFC1390012558B /* icon_3818.png */; };
+		A7CA13D01BDFC9750012558B /* mala pizza@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7CA13CF1BDFC9750012558B /* mala pizza@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,7 @@
 		A703DE381B163A3100CF6DE2 /* UIViewWithBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIViewWithBorder.h; path = "mu first app/UIViewWithBorder.h"; sourceTree = "<group>"; };
 		A703DE391B163A3100CF6DE2 /* UIViewWithBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIViewWithBorder.m; path = "mu first app/UIViewWithBorder.m"; sourceTree = "<group>"; };
 		A745F2861B177D2A00DDB59F /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		A74DA9A21B1454B900DDD3BF /* mu first app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mu first app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74DA9A21B1454B900DDD3BF /* My first app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My first app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74DA9A61B1454B900DDD3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74DA9A71B1454B900DDD3BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A74DA9A91B1454B900DDD3BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +52,9 @@
 		A74DA9C41B1454BA00DDD3BF /* mu_first_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mu_first_appTests.m; sourceTree = "<group>"; };
 		A74DA9D01B14822F00DDD3BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A757193C1B74CF1B0050FD54 /* asu_pid.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = asu_pid.entitlements; path = "mu first app/asu_pid.entitlements"; sourceTree = "<group>"; };
+		A7CA13CD1BDFC1390012558B /* icon_3818.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_3818.png; sourceTree = "<group>"; };
+		A7CA13CF1BDFC9750012558B /* mala pizza@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mala pizza@2x.png"; sourceTree = "<group>"; };
+		A7CA13E51BDFDEE70012558B /* mu first app copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mu first app copy-Info.plist"; path = "/Users/Yosemite/Documents/Xcode projects/mu first app/mu first app copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,19 +78,22 @@
 		A74DA9991B1454B900DDD3BF = {
 			isa = PBXGroup;
 			children = (
+				A7CA13CD1BDFC1390012558B /* icon_3818.png */,
+				A7CA13CF1BDFC9750012558B /* mala pizza@2x.png */,
 				A757193C1B74CF1B0050FD54 /* asu_pid.entitlements */,
 				A703DE381B163A3100CF6DE2 /* UIViewWithBorder.h */,
 				A703DE391B163A3100CF6DE2 /* UIViewWithBorder.m */,
 				A74DA9A41B1454B900DDD3BF /* mu first app */,
 				A74DA9C11B1454BA00DDD3BF /* mu first appTests */,
 				A74DA9A31B1454B900DDD3BF /* Products */,
+				A7CA13E51BDFDEE70012558B /* mu first app copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		A74DA9A31B1454B900DDD3BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A74DA9A21B1454B900DDD3BF /* mu first app.app */,
+				A74DA9A21B1454B900DDD3BF /* My first app.app */,
 				A74DA9BE1B1454BA00DDD3BF /* mu first appTests.xctest */,
 			);
 			name = Products;
@@ -138,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A74DA9A11B1454B900DDD3BF /* mu first app */ = {
+		A74DA9A11B1454B900DDD3BF /* My first app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A74DA9C81B1454BA00DDD3BF /* Build configuration list for PBXNativeTarget "mu first app" */;
+			buildConfigurationList = A74DA9C81B1454BA00DDD3BF /* Build configuration list for PBXNativeTarget "My first app" */;
 			buildPhases = (
 				A74DA99E1B1454B900DDD3BF /* Sources */,
 				A74DA99F1B1454B900DDD3BF /* Frameworks */,
@@ -150,9 +158,9 @@
 			);
 			dependencies = (
 			);
-			name = "mu first app";
+			name = "My first app";
 			productName = "mu first app";
-			productReference = A74DA9A21B1454B900DDD3BF /* mu first app.app */;
+			productReference = A74DA9A21B1454B900DDD3BF /* My first app.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A74DA9BD1B1454BA00DDD3BF /* mu first appTests */ = {
@@ -184,6 +192,7 @@
 				TargetAttributes = {
 					A74DA9A11B1454B900DDD3BF = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 8N36BKWL8R;
 					};
 					A74DA9BD1B1454BA00DDD3BF = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -204,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A74DA9A11B1454B900DDD3BF /* mu first app */,
+				A74DA9A11B1454B900DDD3BF /* My first app */,
 				A74DA9BD1B1454BA00DDD3BF /* mu first appTests */,
 			);
 		};
@@ -215,10 +224,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CA13CE1BDFC1390012558B /* icon_3818.png in Resources */,
 				A745F2871B177D2A00DDB59F /* Entitlements.plist in Resources */,
 				A757193D1B74CF1B0050FD54 /* asu_pid.entitlements in Resources */,
 				A74DA9D11B14822F00DDD3BF /* Images.xcassets in Resources */,
 				A74DA9B41B1454BA00DDD3BF /* Main.storyboard in Resources */,
+				A7CA13D01BDFC9750012558B /* mala pizza@2x.png in Resources */,
 				A74DA9B91B1454BA00DDD3BF /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +269,7 @@
 /* Begin PBXTargetDependency section */
 		A74DA9C01B1454BA00DDD3BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A74DA9A11B1454B900DDD3BF /* mu first app */;
+			target = A74DA9A11B1454B900DDD3BF /* My first app */;
 			targetProxy = A74DA9BF1B1454BA00DDD3BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -374,13 +385,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "mu first app/asu_pid.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "mu first app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -390,14 +402,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "mu first app/asu_pid.entitlements";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "-";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "mu first app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -448,7 +461,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A74DA9C81B1454BA00DDD3BF /* Build configuration list for PBXNativeTarget "mu first app" */ = {
+		A74DA9C81B1454BA00DDD3BF /* Build configuration list for PBXNativeTarget "My first app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A74DA9C91B1454BA00DDD3BF /* Debug */,

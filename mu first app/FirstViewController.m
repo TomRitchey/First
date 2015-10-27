@@ -32,8 +32,12 @@ NSString* timesButtonPresed;
 }
 
 
+- (IBAction)hideKeyboard:(id)sender {
+    [sender resignFirstResponder];
+    //NSLog(@"hide?");
+}
 
-- (IBAction)ChrisSucksBalls:(id)sender {
+- (IBAction)buttonPress:(id)sender {
     buttonPressedTimes++;
     timesButtonPresed = [NSString stringWithFormat:@"Button pressed %d times", buttonPressedTimes];
     self.TextBox.text=timesButtonPresed;

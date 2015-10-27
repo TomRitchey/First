@@ -39,6 +39,8 @@ UIViewWithBorder *viewWithBorder;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     self.stepper2.value = 8;
     screen = [[UIScreen mainScreen] bounds];
     screenWidth = CGRectGetWidth(screen);
@@ -165,18 +167,17 @@ UIViewWithBorder *viewWithBorder;
 - (void)redrawingDevice{
     UIInterfaceOrientation interfaceOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-    if (UIInterfaceOrientationIsPortrait(interfaceOrientation)){[self adaptVideoOrientation];
+    [self adaptVideoOrientation];
+    
+    if (UIInterfaceOrientationIsPortrait(interfaceOrientation)){
         center_x = (screenWidth-rectWidth)/2;
         center_y = (screenHeight-rectWidth)/2;
-        [viewWithBorder setFrame:CGRectMake(center_x, center_y, rectWidth, rectWidth)];
-        [viewWithBorder setNeedsDisplay];
-    }
-    else{[self adaptVideoOrientation];
+    }else{
         center_y = (screenWidth-rectWidth)/2;
         center_x = (screenHeight-rectWidth)/2;
-        [viewWithBorder setFrame:CGRectMake(center_x, center_y, rectWidth, rectWidth)];
-        [viewWithBorder setNeedsDisplay];
     }
+    [viewWithBorder setFrame:CGRectMake(center_x, center_y, rectWidth, rectWidth)];
+    [viewWithBorder setNeedsDisplay];
 }
 
 -(void)adaptVideoOrientation{
@@ -200,5 +201,4 @@ UIViewWithBorder *viewWithBorder;
     [self.view.layer insertSublayer:previewLayer atIndex:0];
         break;}
 }
-
 @end
