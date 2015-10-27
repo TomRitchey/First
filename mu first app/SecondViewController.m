@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *stepperCount2;
 @property (strong, nonatomic) IBOutlet UIPinchGestureRecognizer *pinchAction;
 @property (strong, nonatomic) IBOutlet UIRotationGestureRecognizer *rotationAction;
+@property (strong, nonatomic) IBOutlet UILabel *pinchInfo;
 
 @end
 
@@ -121,7 +122,12 @@ UIViewWithBorder *viewWithBorder;
     
    // NSLog(@" layer camera %lu",(unsigned long)[self.view.layer indexOfObject:self.previ]);
     
-
+    [UIView animateWithDuration:5 animations:^{
+        self.pinchInfo.alpha = 0;
+        //[self.pinchInfo setHidden:YES];
+    }];
+    
+    //
     
 }
 

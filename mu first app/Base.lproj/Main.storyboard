@@ -27,10 +27,11 @@
                                     <action selector="hideKeyboard:" destination="9pv-A4-QxB" eventType="editingDidEnd" id="EPs-Ji-flN"/>
                                     <action selector="hideKeyboard:" destination="9pv-A4-QxB" eventType="touchUpOutside" id="eag-Vw-sP0"/>
                                     <action selector="hideKeyboard:" destination="9pv-A4-QxB" eventType="editingDidEndOnExit" id="feb-6i-hAz"/>
+                                    <action selector="textBoxEditStart:" destination="9pv-A4-QxB" eventType="editingDidBegin" id="atA-rm-hjc"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97h-RF-ba8">
-                                <rect key="frame" x="277" y="136" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97h-RF-ba8">
+                                <rect key="frame" x="236" y="141" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,15 +40,31 @@
                                     <action selector="buttonPress:" destination="9pv-A4-QxB" eventType="touchUpInside" id="kwr-fq-NYz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OT-hK-gsG">
+                                <rect key="frame" x="342" y="141" width="39" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetClick:" destination="9pv-A4-QxB" eventType="touchUpInside" id="DOI-jk-WJG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5OT-hK-gsG" firstAttribute="leading" secondItem="97h-RF-ba8" secondAttribute="trailing" constant="30" id="3mU-kk-9Kw"/>
+                            <constraint firstItem="5OT-hK-gsG" firstAttribute="baseline" secondItem="97h-RF-ba8" secondAttribute="baseline" id="5d4-jN-ReK"/>
+                            <constraint firstItem="5OT-hK-gsG" firstAttribute="leading" secondItem="97h-RF-ba8" secondAttribute="leading" constant="59" id="A1O-aV-RNx"/>
                             <constraint firstItem="dmF-DH-MeT" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="174" id="YPu-Mg-JCZ"/>
-                            <constraint firstItem="97h-RF-ba8" firstAttribute="centerX" secondItem="dmF-DH-MeT" secondAttribute="centerX" id="lDB-Lj-40y"/>
+                            <constraint firstItem="97h-RF-ba8" firstAttribute="centerX" secondItem="dmF-DH-MeT" secondAttribute="centerX" constant="-40" id="lDB-Lj-40y"/>
                             <constraint firstAttribute="centerX" secondItem="dmF-DH-MeT" secondAttribute="centerX" id="qYN-mz-S4x"/>
                             <constraint firstItem="dmF-DH-MeT" firstAttribute="top" secondItem="97h-RF-ba8" secondAttribute="bottom" constant="8" symbolic="YES" id="z9L-A4-YNf"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3mU-kk-9Kw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
@@ -85,14 +102,23 @@
                                     <action selector="stepperTapped:" destination="WDs-jt-qEf" eventType="valueChanged" id="QfQ-zJ-U6x"/>
                                 </connections>
                             </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Use 2 fingers to rotate or change size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-K0-8Nx">
+                                <rect key="frame" x="157" y="28" width="287" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UTb-3k-8rb" firstAttribute="leading" secondItem="iJ0-be-3MX" secondAttribute="leadingMargin" id="0KN-uq-SQe"/>
+                            <constraint firstItem="EEw-K0-8Nx" firstAttribute="centerX" secondItem="iJ0-be-3MX" secondAttribute="centerX" id="6iU-kM-4Cf"/>
                             <constraint firstItem="jEs-5d-Ag1" firstAttribute="top" secondItem="UTb-3k-8rb" secondAttribute="bottom" constant="44" id="Far-m8-iFM"/>
                             <constraint firstItem="jEs-5d-Ag1" firstAttribute="top" secondItem="MKy-Ec-Y2E" secondAttribute="bottom" constant="37" id="Mm4-lC-kVq"/>
+                            <constraint firstItem="EEw-K0-8Nx" firstAttribute="top" secondItem="uop-lX-RwQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Qij-VR-prn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MKy-Ec-Y2E" secondAttribute="trailing" constant="19" id="izb-V3-Wqf"/>
                         </constraints>
                         <connections>
@@ -105,6 +131,7 @@
                     </tabBarItem>
                     <connections>
                         <outlet property="pinchAction" destination="Z4t-dr-3Bc" id="DyN-wT-gTs"/>
+                        <outlet property="pinchInfo" destination="EEw-K0-8Nx" id="ABI-bl-bK5"/>
                         <outlet property="rotationAction" destination="TgO-TO-pQ9" id="Uq8-3O-mk9"/>
                         <outlet property="stepper2" destination="MKy-Ec-Y2E" id="Kts-SA-fgV"/>
                         <outlet property="stepperCount2" destination="UTb-3k-8rb" id="Fvt-Q2-blX"/>

@@ -25,12 +25,20 @@ NSString* timesButtonPresed;
     [self.Button1 setTitle:@"Click" forState:UIControlStateNormal];
 
 }
+- (IBAction)textBoxEditStart:(id)sender {
+    self.TextBox.text=@"Editing not allowed";
+    [sender resignFirstResponder];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)resetClick:(id)sender {
+    self.TextBox.text=@"No button press";
+    buttonPressedTimes = 0;
+}
 
 - (IBAction)hideKeyboard:(id)sender {
     [sender resignFirstResponder];
